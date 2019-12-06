@@ -1,0 +1,48 @@
+html{
+    height: 100%;
+    overflow: hidden;
+
+}
+body{
+    color:rgba(230, 137, 137, 0.829);
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: "luna";
+    background-color: brown;
+
+}
+header{
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 30vh 0 5vh;
+    position: relative;
+    transform-style: inherit;
+    width:100vh;
+}
+header h{
+    margin-top:-100px;
+}
+header,header:before {
+    background: -50% -50%/cover;
+}
+header::before{
+    bottom:0;
+    content: "";
+    left:0;
+    position: absolute;
+    right: 0;
+    top:0;
+    display:block;
+    background-image: url(BLK\ n\ WHT_1.jpg);
+    background-size: cover;
+    transform-origin:center center 0;
+    transform:translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+
+}
