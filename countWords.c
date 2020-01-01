@@ -11,7 +11,7 @@ void main()
     len=strlen(s);
     for(i=0;i<len;i++)
     {
-        if((s[i]!=' ' && s[i+1]==' ')||(s[i]!='\t' && s[i+1]=='\t'))
+        if((s[i]!=' ' && s[i+1]==' ')||(s[i]!='\t' && s[i+1]=='\t'||s[i+1]==(int)NULL))
         {
             count++;
         }
